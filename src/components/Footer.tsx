@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="col-span-2 lg:col-span-1">
             <a href="#" className="text-xl font-semibold tracking-tight text-foreground">
-              CapCycle
+              Xavisa
             </a>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
               Transforming waste into wonder. Sustainable furniture 
@@ -46,7 +46,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2025 CapCycle. All rights reserved.
+            © 2025 Xavisa. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">

@@ -71,7 +71,7 @@ const ImpactSection = () => {
             a future where waste becomes wonder."
           </blockquote>
           <cite className="block mt-6 text-sm font-medium uppercase tracking-wide opacity-60">
-            — CapCycle Founders
+            — Xavisa Founders
           </cite>
         </div>
       </div>

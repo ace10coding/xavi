@@ -23,8 +23,7 @@ const HeroSection = () => {
             </div>
             
             <p className="text-subtitle text-muted-foreground max-w-lg mx-auto lg:mx-0">
-              We transform discarded bottle caps into beautifully crafted chairs. 
-              Each piece tells a story of sustainability and thoughtful design.
+              We transform discarded bottle caps into beautifully crafted chairs.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

@@ -34,7 +34,7 @@ const Header = () => {
           {/* Logo */}
           <a href="#" className="flex items-center space-x-2">
             <span className="text-xl font-semibold tracking-tight text-foreground">
-              CapCycle
+              Xavisa
             </span>
           </a>
 

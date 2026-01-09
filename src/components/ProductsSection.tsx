@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import heroChair from "@/assets/hero-chair.jpg";
 import chairLifestyle from "@/assets/chair-lifestyle.jpg";
+import blueChair from "@/assets/blue-chair.jpg";
 
 const ProductsSection = () => {
   const products = [
@@ -14,18 +15,18 @@ const ProductsSection = () => {
     },
     {
       id: 2,
-      name: "The Minimal",
-      description: "Sleek monochrome design for modern spaces",
+      name: "The Classic Blue",
+      description: "Durable and comfortable design in vibrant blue",
       price: "$299",
-      image: chairLifestyle,
+      image: blueChair,
       badge: "New",
     },
     {
       id: 3,
-      name: "The Classic",
-      description: "Timeless design with ergonomic comfort",
+      name: "The Minimal",
+      description: "Sleek monochrome design for modern spaces",
       price: "$379",
-      image: heroChair,
+      image: chairLifestyle,
       badge: null,
     },
   ];
