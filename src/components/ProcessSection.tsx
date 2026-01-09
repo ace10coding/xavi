@@ -1,6 +1,6 @@
 import bottleCapsImage from "@/assets/bottle-caps.jpg";
 import plasticBottlesImage from "@/assets/plastic-bottles.jpg";
-import chairLifestyleImage from "@/assets/chair-lifestyle.jpg";
+import blueChair from "@/assets/blue-chair.jpg";
 
 const ProcessSection = () => {
   const steps = [
@@ -9,18 +9,21 @@ const ProcessSection = () => {
       title: "Collect",
       description: "We partner with communities and businesses to collect plastic bottle caps that would otherwise end up in landfills.",
       image: plasticBottlesImage,
+      objectFit: "cover" as const,
     },
     {
       number: "02",
       title: "Process",
       description: "Caps are cleaned, sorted by color, and processed into raw material ready for manufacturing.",
       image: bottleCapsImage,
+      objectFit: "cover" as const,
     },
     {
       number: "03",
       title: "Create",
-      description: "Our craftspeople mold and shape the recycled plastic into stunning, durable furniture pieces.",
-      image: chairLifestyleImage,
+      description: "Our craftspeople mold and shape the recycled plastic into stunning, durable furniture pieces like The Classic Blue.",
+      image: blueChair,
+      objectFit: "contain" as const,
     },
   ];
 
@@ -54,11 +57,13 @@ const ProcessSection = () => {
               <div
                 className={`relative ${index % 2 === 1 ? "lg:col-start-2" : ""}`}
               >
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-elevated">
+                <div className={`aspect-[4/3] rounded-2xl overflow-hidden shadow-elevated ${step.objectFit === "contain" ? "bg-background" : ""}`}>
                   <img
                     src={step.image}
                     alt={step.title}
-                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                    className={`w-full h-full transition-transform duration-700 hover:scale-105 ${
+                      step.objectFit === "contain" ? "object-contain p-6" : "object-cover"
+                    }`}
                   />
                 </div>
               </div>
