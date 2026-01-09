@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-chair.jpg";
+import blueChair from "@/assets/blue-chair.jpg";
 
 const HeroSection = () => {
   return (
@@ -28,7 +28,7 @@ const HeroSection = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button variant="hero" size="lg">
-                Explore Collection
+                Shop The Classic Blue
               </Button>
               <Button variant="heroOutline" size="lg">
                 Learn More
@@ -55,11 +55,11 @@ const HeroSection = () => {
 
           {/* Hero Image */}
           <div className="relative animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            <div className="relative aspect-square lg:aspect-[4/5] rounded-3xl overflow-hidden shadow-floating">
+            <div className="relative aspect-square rounded-3xl overflow-hidden bg-secondary shadow-floating">
               <img
-                src={heroImage}
-                alt="Sustainable chair made from recycled bottle caps"
-                className="w-full h-full object-cover animate-float"
+                src={blueChair}
+                alt="The Classic Blue - Sustainable chair made from recycled bottle caps"
+                className="w-full h-full object-contain p-8 animate-float"
               />
             </div>
             
@@ -67,6 +67,12 @@ const HeroSection = () => {
             <div className="absolute -bottom-4 -left-4 lg:-bottom-6 lg:-left-6 bg-background rounded-2xl p-4 lg:p-6 shadow-elevated">
               <p className="text-xs text-muted-foreground uppercase tracking-wide">Made from</p>
               <p className="text-xl lg:text-2xl font-semibold text-foreground">500 Caps</p>
+            </div>
+
+            {/* Price tag */}
+            <div className="absolute -top-2 -right-2 lg:-top-4 lg:-right-4 bg-foreground text-background rounded-2xl p-4 lg:p-5 shadow-elevated">
+              <p className="text-xs uppercase tracking-wide opacity-70">Only</p>
+              <p className="text-xl lg:text-2xl font-bold">$299</p>
             </div>
           </div>
         </div>
