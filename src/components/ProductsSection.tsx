@@ -74,9 +74,9 @@ const ProductsSection = () => {
               {/* Price & CTA */}
               <div className="pt-6 border-t border-border">
                 <div className="flex items-end gap-4 mb-6">
-                  <span className="text-4xl font-bold text-foreground">$299</span>
-                  <span className="text-lg text-muted-foreground line-through">$399</span>
-                  <span className="text-sm font-medium text-accent uppercase">Save $100</span>
+                  <span className="text-4xl font-bold text-foreground">8,999 MZN</span>
+                  <span className="text-lg text-muted-foreground line-through">12,999 MZN</span>
+                  <span className="text-sm font-medium text-accent uppercase">Poupa 4,000 MZN</span>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button variant="hero" size="xl" className="flex-1">

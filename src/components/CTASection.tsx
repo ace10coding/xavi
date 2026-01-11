@@ -21,7 +21,7 @@ const CTASection = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button variant="hero" size="xl">
-                Order Now — $299
+                Encomendar — 8,999 MZN
               </Button>
               <Button variant="heroOutline" size="xl">
                 Donate Caps
