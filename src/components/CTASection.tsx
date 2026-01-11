@@ -19,17 +19,25 @@ const CTASection = () => {
               Each chair is crafted to order.
             </p>
 
+            <div className="bg-accent/10 rounded-2xl p-6 mb-6 border border-accent/20 max-w-sm">
+              <p className="text-sm text-muted-foreground mb-1">Pack Exclusivo • 4 Cadeiras</p>
+              <div className="flex items-end gap-3">
+                <span className="text-3xl font-bold text-foreground">799 MZN</span>
+                <span className="text-muted-foreground line-through">880 MZN</span>
+              </div>
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button variant="hero" size="xl">
-                Encomendar — 8,999 MZN
+                Comprar Pack — 799 MZN
               </Button>
               <Button variant="heroOutline" size="xl">
-                Donate Caps
+                Doar Tampas
               </Button>
             </div>
 
             <p className="mt-8 text-sm text-muted-foreground">
-              Free shipping worldwide • 5-year warranty • 30-day returns
+              Entrega grátis em Moçambique • Garantia 5 anos • Devoluções 30 dias
             </p>
           </div>
 

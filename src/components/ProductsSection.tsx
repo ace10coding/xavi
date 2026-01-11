@@ -73,21 +73,37 @@ const ProductsSection = () => {
 
               {/* Price & CTA */}
               <div className="pt-6 border-t border-border">
-                <div className="flex items-end gap-4 mb-6">
-                  <span className="text-4xl font-bold text-foreground">8,999 MZN</span>
-                  <span className="text-lg text-muted-foreground line-through">12,999 MZN</span>
-                  <span className="text-sm font-medium text-accent uppercase">Poupa 4,000 MZN</span>
+                {/* Single Chair Price */}
+                <div className="mb-6">
+                  <p className="text-sm text-muted-foreground uppercase tracking-wide mb-1">Preço Unitário</p>
+                  <span className="text-2xl font-semibold text-foreground">220 MZN</span>
                 </div>
+                
+                {/* Bundle Offer */}
+                <div className="bg-accent/10 rounded-2xl p-6 mb-6 border border-accent/20">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="px-3 py-1 text-xs font-semibold uppercase tracking-wider bg-accent text-accent-foreground rounded-full">
+                      Pack Exclusivo
+                    </span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-2">Conjunto de 4 Cadeiras</p>
+                  <div className="flex items-end gap-3">
+                    <span className="text-4xl font-bold text-foreground">799 MZN</span>
+                    <span className="text-lg text-muted-foreground line-through">880 MZN</span>
+                  </div>
+                  <p className="text-sm text-accent font-medium mt-2">Poupa 81 MZN no pack</p>
+                </div>
+
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button variant="hero" size="xl" className="flex-1">
-                    Order Now
+                    Comprar Pack de 4
                   </Button>
                   <Button variant="heroOutline" size="xl">
-                    Learn More
+                    Comprar 1 Cadeira
                   </Button>
                 </div>
                 <p className="mt-4 text-sm text-muted-foreground">
-                  Free shipping worldwide • 30-day returns
+                  Entrega grátis em Moçambique • Garantia 5 anos
                 </p>
               </div>
             </div>
