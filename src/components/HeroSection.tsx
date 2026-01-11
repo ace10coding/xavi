@@ -71,8 +71,8 @@ const HeroSection = () => {
 
             {/* Price tag */}
             <div className="absolute -top-2 -right-2 lg:-top-4 lg:-right-4 bg-foreground text-background rounded-2xl p-4 lg:p-5 shadow-elevated">
-              <p className="text-xs uppercase tracking-wide opacity-70">Apenas</p>
-              <p className="text-xl lg:text-2xl font-bold">8,999 MZN</p>
+              <p className="text-xs uppercase tracking-wide opacity-70">Pack de 4</p>
+              <p className="text-xl lg:text-2xl font-bold">799 MZN</p>
             </div>
           </div>
         </div>
