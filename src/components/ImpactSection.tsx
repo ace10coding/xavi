@@ -1,32 +1,80 @@
 import { Leaf, Recycle, Users, Globe } from "lucide-react";
 
-const ImpactSection = () => {
-  const stats = [
-    {
-      icon: Recycle,
-      value: "2.5M+",
-      label: "Bottle Caps Recycled",
-      description: "Diverted from landfills and oceans",
+interface ImpactSectionProps {
+  lang?: "en" | "pt";
+}
+
+const ImpactSection = ({ lang = "pt" }: ImpactSectionProps) => {
+  const content = {
+    en: {
+      badge: "Our Impact",
+      title: "Every cap counts.",
+      subtitle: "Together, we're creating a circular economy that transforms waste into beautiful, functional design.",
+      stats: [
+        {
+          icon: Recycle,
+          value: "2.5M+",
+          label: "Bottle Caps Recycled",
+          description: "Diverted from landfills and oceans",
+        },
+        {
+          icon: Leaf,
+          value: "500",
+          label: "Tons CO₂ Saved",
+          description: "Compared to virgin plastic production",
+        },
+        {
+          icon: Users,
+          value: "150+",
+          label: "Community Partners",
+          description: "Schools, offices, and local businesses",
+        },
+        {
+          icon: Globe,
+          value: "30+",
+          label: "Countries Reached",
+          description: "Global impact, local action",
+        },
+      ],
+      quote: "The best way to predict the future is to design it. We're designing a future where waste becomes wonder.",
+      author: "— Xavisa Founders",
     },
-    {
-      icon: Leaf,
-      value: "500",
-      label: "Tons CO₂ Saved",
-      description: "Compared to virgin plastic production",
+    pt: {
+      badge: "Nosso Impacto",
+      title: "Cada tampa conta.",
+      subtitle: "Juntos, estamos criando uma economia circular que transforma lixo em design bonito e funcional.",
+      stats: [
+        {
+          icon: Recycle,
+          value: "2.5M+",
+          label: "Tampas Recicladas",
+          description: "Desviadas de aterros e oceanos",
+        },
+        {
+          icon: Leaf,
+          value: "500",
+          label: "Tons CO₂ Poupadas",
+          description: "Comparado à produção de plástico virgem",
+        },
+        {
+          icon: Users,
+          value: "150+",
+          label: "Parceiros Comunitários",
+          description: "Escolas, escritórios e empresas locais",
+        },
+        {
+          icon: Globe,
+          value: "30+",
+          label: "Países Alcançados",
+          description: "Impacto global, ação local",
+        },
+      ],
+      quote: "A melhor maneira de prever o futuro é projetá-lo. Estamos projetando um futuro onde o lixo se torna maravilha.",
+      author: "— Fundadores Xavisa",
     },
-    {
-      icon: Users,
-      value: "150+",
-      label: "Community Partners",
-      description: "Schools, offices, and local businesses",
-    },
-    {
-      icon: Globe,
-      value: "30+",
-      label: "Countries Reached",
-      description: "Global impact, local action",
-    },
-  ];
+  };
+
+  const t = content[lang];
 
   return (
     <section id="impact" className="py-24 lg:py-32 bg-foreground text-background">
@@ -34,20 +82,19 @@ const ImpactSection = () => {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16 lg:mb-24">
           <p className="text-sm font-medium uppercase tracking-widest text-accent mb-4">
-            Our Impact
+            {t.badge}
           </p>
           <h2 className="text-title lg:text-hero font-semibold mb-6">
-            Every cap counts.
+            {t.title}
           </h2>
           <p className="text-lg opacity-70">
-            Together, we're creating a circular economy that transforms 
-            waste into beautiful, functional design.
+            {t.subtitle}
           </p>
         </div>
 
         {/* Stats Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-          {stats.map((stat, index) => (
+          {t.stats.map((stat, index) => (
             <div
               key={index}
               className="text-center p-8 rounded-2xl bg-background/5 backdrop-blur-sm border border-background/10 transition-all duration-300 hover:bg-background/10"
@@ -67,11 +114,10 @@ const ImpactSection = () => {
         {/* Quote */}
         <div className="mt-16 lg:mt-24 text-center max-w-3xl mx-auto">
           <blockquote className="text-2xl lg:text-3xl font-light italic opacity-80 leading-relaxed">
-            "The best way to predict the future is to design it. We're designing 
-            a future where waste becomes wonder."
+            "{t.quote}"
           </blockquote>
           <cite className="block mt-6 text-sm font-medium uppercase tracking-wide opacity-60">
-            — Xavisa Founders
+            {t.author}
           </cite>
         </div>
       </div>

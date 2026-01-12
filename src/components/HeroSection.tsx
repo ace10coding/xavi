@@ -1,7 +1,34 @@
 import { Button } from "@/components/ui/button";
 import whiteChair from "@/assets/white-chair.jpg";
 
-const HeroSection = () => {
+interface HeroSectionProps {
+  lang?: "en" | "pt";
+}
+
+const HeroSection = ({ lang = "pt" }: HeroSectionProps) => {
+  const content = {
+    en: {
+      badge: "Sustainable Design",
+      title1: "From Waste",
+      title2: "to Wonder.",
+      description: "We transform discarded bottle caps into beautifully crafted chairs.",
+      shopBtn: "Shop The Classic White",
+      learnBtn: "Learn More",
+      packLabel: "Pack of 4",
+    },
+    pt: {
+      badge: "Design Sustentável",
+      title1: "De Lixo",
+      title2: "a Maravilha.",
+      description: "Transformamos tampas de garrafa descartadas em cadeiras lindamente criadas.",
+      shopBtn: "Comprar The Classic White",
+      learnBtn: "Saber Mais",
+      packLabel: "Pack de 4",
+    },
+  };
+
+  const t = content[lang];
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-gradient">
       {/* Background gradient overlay */}
@@ -13,43 +40,26 @@ const HeroSection = () => {
           <div className="text-center lg:text-left space-y-8 animate-fade-up">
             <div className="space-y-4">
               <p className="text-sm font-medium uppercase tracking-widest text-accent">
-                Sustainable Design
+                {t.badge}
               </p>
               <h1 className="text-hero lg:text-display font-semibold text-foreground text-balance">
-                From Waste
+                {t.title1}
                 <br />
-                <span className="text-muted-foreground">to Wonder.</span>
+                <span className="text-muted-foreground">{t.title2}</span>
               </h1>
             </div>
             
             <p className="text-subtitle text-muted-foreground max-w-lg mx-auto lg:mx-0">
-              We transform discarded bottle caps into beautifully crafted chairs.
+              {t.description}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button variant="hero" size="lg">
-                Shop The Classic White
+                {t.shopBtn}
               </Button>
               <Button variant="heroOutline" size="lg">
-                Learn More
+                {t.learnBtn}
               </Button>
-            </div>
-
-            <div className="flex items-center justify-center lg:justify-start gap-8 pt-4">
-              <div className="text-center">
-                <p className="text-2xl font-semibold text-foreground">50K+</p>
-                <p className="text-xs text-muted-foreground uppercase tracking-wide">Caps Recycled</p>
-              </div>
-              <div className="w-px h-10 bg-border" />
-              <div className="text-center">
-                <p className="text-2xl font-semibold text-foreground">1,200+</p>
-                <p className="text-xs text-muted-foreground uppercase tracking-wide">Chairs Made</p>
-              </div>
-              <div className="w-px h-10 bg-border" />
-              <div className="text-center">
-                <p className="text-2xl font-semibold text-foreground">100%</p>
-                <p className="text-xs text-muted-foreground uppercase tracking-wide">Sustainable</p>
-              </div>
             </div>
           </div>
 
@@ -59,7 +69,7 @@ const HeroSection = () => {
               <img
                 src={whiteChair}
                 alt="The Classic White - Sustainable chair made from recycled bottle caps"
-                className="w-full h-full object-contain p-8 animate-float"
+                className="w-full h-full object-cover animate-float"
               />
             </div>
             
@@ -71,7 +81,7 @@ const HeroSection = () => {
 
             {/* Price tag */}
             <div className="absolute -top-2 -right-2 lg:-top-4 lg:-right-4 bg-foreground text-background rounded-2xl p-4 lg:p-5 shadow-elevated">
-              <p className="text-xs uppercase tracking-wide opacity-70">Pack de 4</p>
+              <p className="text-xs uppercase tracking-wide opacity-70">{t.packLabel}</p>
               <p className="text-xl lg:text-2xl font-bold">799 MZN</p>
             </div>
           </div>

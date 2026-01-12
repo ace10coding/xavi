@@ -1,9 +1,46 @@
-const Footer = () => {
+interface FooterProps {
+  lang?: "en" | "pt";
+}
+
+const Footer = ({ lang = "pt" }: FooterProps) => {
+  const content = {
+    en: {
+      tagline: "Transforming waste into wonder. Sustainable furniture for a better tomorrow.",
+      products: "Products",
+      productLinks: ["All Chairs"],
+      company: "Company",
+      companyLinks: ["Sustainability", "Careers"],
+      support: "Support",
+      supportLinks: ["Contact", "FAQ", "Shipping", "Returns"],
+      connect: "Connect",
+      connectLinks: ["Instagram", "Twitter", "LinkedIn", "Newsletter"],
+      copyright: "© 2025 Xavisa. All rights reserved.",
+      privacy: "Privacy Policy",
+      terms: "Terms of Service",
+    },
+    pt: {
+      tagline: "Transformando lixo em maravilha. Mobiliário sustentável para um amanhã melhor.",
+      products: "Produtos",
+      productLinks: ["Todas as Cadeiras"],
+      company: "Empresa",
+      companyLinks: ["Sustentabilidade", "Carreiras"],
+      support: "Suporte",
+      supportLinks: ["Contacto", "FAQ", "Envio", "Devoluções"],
+      connect: "Conectar",
+      connectLinks: ["Instagram", "Twitter", "LinkedIn", "Newsletter"],
+      copyright: "© 2025 Xavisa. Todos os direitos reservados.",
+      privacy: "Política de Privacidade",
+      terms: "Termos de Serviço",
+    },
+  };
+
+  const t = content[lang];
+
   const footerLinks = {
-    Products: ["All Chairs", "New Arrivals", "Best Sellers", "Custom Orders"],
-    Company: ["About Us", "Our Story", "Sustainability", "Careers"],
-    Support: ["Contact", "FAQ", "Shipping", "Returns"],
-    Connect: ["Instagram", "Twitter", "LinkedIn", "Newsletter"],
+    [t.products]: t.productLinks,
+    [t.company]: t.companyLinks,
+    [t.support]: t.supportLinks,
+    [t.connect]: t.connectLinks,
   };
 
   return (
@@ -16,8 +53,7 @@ const Footer = () => {
               Xavisa
             </a>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
-              Transforming waste into wonder. Sustainable furniture 
-              for a better tomorrow.
+              {t.tagline}
             </p>
           </div>
 
@@ -46,14 +82,14 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2025 Xavisa. All rights reserved.
+            {t.copyright}
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Privacy Policy
+              {t.privacy}
             </a>
             <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Terms of Service
+              {t.terms}
             </a>
           </div>
         </div>

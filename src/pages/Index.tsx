@@ -6,18 +6,22 @@ import ImpactSection from "@/components/ImpactSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
-const Index = () => {
+interface IndexProps {
+  lang?: "en" | "pt";
+}
+
+const Index = ({ lang = "pt" }: IndexProps) => {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      <Header lang={lang} />
       <main>
-        <HeroSection />
-        <ProcessSection />
-        <ProductsSection />
-        <ImpactSection />
-        <CTASection />
+        <HeroSection lang={lang} />
+        <ProcessSection lang={lang} />
+        <ProductsSection lang={lang} />
+        <ImpactSection lang={lang} />
+        <CTASection lang={lang} />
       </main>
-      <Footer />
+      <Footer lang={lang} />
     </div>
   );
 };

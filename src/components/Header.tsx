@@ -1,10 +1,17 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { useNavigate, useLocation } from "react-router-dom";
 
-const Header = () => {
+interface HeaderProps {
+  lang?: "en" | "pt";
+}
+
+const Header = ({ lang = "pt" }: HeaderProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,12 +21,36 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: "Products", href: "#products" },
-    { name: "Process", href: "#process" },
-    { name: "Impact", href: "#impact" },
-    { name: "About", href: "#about" },
-  ];
+  const content = {
+    en: {
+      navLinks: [
+        { name: "Products", href: "#products" },
+        { name: "Process", href: "#process" },
+        { name: "Impact", href: "#impact" },
+        { name: "About", href: "#about" },
+      ],
+      shopNow: "Shop Now",
+      langSwitch: "PT",
+      langSwitchPath: "/pt",
+    },
+    pt: {
+      navLinks: [
+        { name: "Produtos", href: "#products" },
+        { name: "Processo", href: "#process" },
+        { name: "Impacto", href: "#impact" },
+        { name: "Sobre", href: "#about" },
+      ],
+      shopNow: "Comprar",
+      langSwitch: "EN",
+      langSwitchPath: "/en",
+    },
+  };
+
+  const t = content[lang];
+
+  const handleLanguageSwitch = () => {
+    navigate(t.langSwitchPath);
+  };
 
   return (
     <header
@@ -40,7 +71,7 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
+            {t.navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
@@ -53,11 +84,11 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" size="sm">
-              Donate Caps
+            <Button variant="ghost" size="sm" onClick={handleLanguageSwitch}>
+              {t.langSwitch}
             </Button>
             <Button variant="default" size="sm">
-              Shop Now
+              {t.shopNow}
             </Button>
           </div>
 
@@ -79,7 +110,7 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-border animate-fade-in">
             <div className="flex flex-col space-y-4">
-              {navLinks.map((link) => (
+              {t.navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
@@ -90,11 +121,11 @@ const Header = () => {
                 </a>
               ))}
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="ghost" size="sm">
-                  Donate Caps
+                <Button variant="ghost" size="sm" onClick={handleLanguageSwitch}>
+                  {t.langSwitch}
                 </Button>
                 <Button variant="default" size="sm">
-                  Shop Now
+                  {t.shopNow}
                 </Button>
               </div>
             </div>
