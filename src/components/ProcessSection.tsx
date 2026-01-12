@@ -57,12 +57,12 @@ const ProcessSection = () => {
               <div
                 className={`relative ${index % 2 === 1 ? "lg:col-start-2" : ""}`}
               >
-                <div className={`aspect-[4/3] rounded-2xl overflow-hidden shadow-elevated ${step.objectFit === "contain" ? "bg-background" : ""}`}>
+                <div className={`aspect-[4/3] rounded-2xl overflow-hidden shadow-elevated ${step.objectFit === "contain" ? "bg-secondary" : ""}`}>
                   <img
                     src={step.image}
                     alt={step.title}
                     className={`w-full h-full transition-transform duration-700 hover:scale-105 ${
-                      step.objectFit === "contain" ? "object-contain p-6" : "object-cover"
+                      step.objectFit === "contain" ? "object-cover" : "object-cover"
                     }`}
                   />
                 </div>
