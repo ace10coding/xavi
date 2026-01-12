@@ -26,7 +26,7 @@ const ProcessSection = ({ lang = "pt" }: ProcessSectionProps) => {
         {
           number: "03",
           title: "Create",
-          description: "Our craftspeople mold and shape the recycled plastic into stunning, durable furniture pieces like The Classic White.",
+          description: "Our chairs are then made from high-quality HDPE, a non-toxic and fully recyclable material that creates a safe environment for both staff and customers. We use a careful injection molding process at 180°C to keep the plastic's integrity without releasing harmful fumes, dioxins, or VOCs into the air.",
         },
       ],
     },
@@ -48,7 +48,7 @@ const ProcessSection = ({ lang = "pt" }: ProcessSectionProps) => {
         {
           number: "03",
           title: "Criar",
-          description: "Os nossos artesãos moldam e dão forma ao plástico reciclado em peças de mobiliário impressionantes e duráveis como a The Classic White.",
+          description: "As nossas cadeiras são feitas de HDPE de alta qualidade, um material não tóxico e totalmente reciclável que cria um ambiente seguro tanto para os funcionários como para os clientes. Utilizamos um processo cuidadoso de moldagem por injeção a 180°C para manter a integridade do plástico sem libertar fumos nocivos, dioxinas ou VOCs para o ar.",
         },
       ],
     },
