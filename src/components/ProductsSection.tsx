@@ -13,8 +13,8 @@ const ProductsSection = ({ lang = "pt" }: ProductsSectionProps) => {
       title: "Our Products.",
       subtitle: "Sustainable design, uncompromising quality.",
       // Chair content
-      chairBadge: "Limited Edition",
-      chairTitle: "The Classic White Chair",
+      chairBadge: "Chair",
+      chairTitle: "Classic White Chair",
       chairDescription: "Crafted from 500+ recycled bottle caps, this iconic design combines bold aesthetics with uncompromising durability.",
       material: "Material",
       materialValue: "100% Recycled Plastic",
@@ -29,7 +29,7 @@ const ProductsSection = ({ lang = "pt" }: ProductsSectionProps) => {
       buyPack: "Buy Pack of 4",
       buyOne: "Buy 1 Chair",
       // Table content
-      tableTitle: "3D Printed Black Table",
+      tableTitle: "Black Table",
       tableDescription: "Our next innovation: elegant black tables crafted using advanced 3D printing technology with recycled materials.",
       tableMaterial: "Material",
       tableMaterialValue: "3D Printed Recycled Plastic",
@@ -49,8 +49,8 @@ const ProductsSection = ({ lang = "pt" }: ProductsSectionProps) => {
       title: "Os Nossos Produtos.",
       subtitle: "Design sustentável, qualidade sem compromissos.",
       // Chair content
-      chairBadge: "Edição Limitada",
-      chairTitle: "Cadeira The Classic White",
+      chairBadge: "Cadeira",
+      chairTitle: "Cadeira Classic White",
       chairDescription: "Fabricada com mais de 500 tampas de garrafa recicladas, este design icónico combina estética arrojada com durabilidade sem compromissos.",
       material: "Material",
       materialValue: "100% Plástico Reciclado",
@@ -65,7 +65,7 @@ const ProductsSection = ({ lang = "pt" }: ProductsSectionProps) => {
       buyPack: "Comprar Pack de 4",
       buyOne: "Comprar 1 Cadeira",
       // Table content
-      tableTitle: "Mesa Preta Impressa em 3D",
+      tableTitle: "Mesa Preta",
       tableDescription: "A nossa próxima inovação: mesas pretas elegantes fabricadas com tecnologia avançada de impressão 3D e materiais reciclados.",
       tableMaterial: "Material",
       tableMaterialValue: "Plástico Reciclado Impresso em 3D",
@@ -111,8 +111,8 @@ const ProductsSection = ({ lang = "pt" }: ProductsSectionProps) => {
                 <div className="relative aspect-square rounded-3xl overflow-hidden bg-secondary shadow-floating">
                   <img
                     src={whiteChair}
-                    alt="The Classic White Chair"
-                    className="w-full h-full object-contain p-4 transition-transform duration-700 group-hover:scale-105"
+                    alt="Classic White Chair"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
                 {/* Exclusive Badge */}
@@ -231,8 +231,8 @@ const ProductsSection = ({ lang = "pt" }: ProductsSectionProps) => {
                 <div className="relative aspect-[4/3] rounded-3xl overflow-hidden bg-secondary shadow-floating">
                   <img
                     src={blackTable}
-                    alt="3D Printed Black Table"
-                    className="w-full h-full object-contain p-4 transition-transform duration-700 group-hover:scale-105"
+                    alt="Black Table"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
               </div>
@@ -263,7 +263,7 @@ const ProductsSection = ({ lang = "pt" }: ProductsSectionProps) => {
                   <span className="text-2xl font-bold">×6</span>
                   <span className="text-2xl">+</span>
                   <div className="w-24 h-24 lg:w-32 lg:h-32 rounded-2xl overflow-hidden bg-background/10">
-                    <img src={blackTable} alt="Table" className="w-full h-full object-contain p-2" />
+                    <img src={blackTable} alt="Table" className="w-full h-full object-cover" />
                   </div>
                   <span className="text-2xl font-bold">×1</span>
                 </div>

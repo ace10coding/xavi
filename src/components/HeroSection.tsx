@@ -21,7 +21,7 @@ const HeroSection = ({ lang = "pt" }: HeroSectionProps) => {
       title1: "De Resíduo",
       title2: "a Maravilha.",
       description: "Transformamos tampas de garrafa descartadas em cadeiras e mesas de design único.",
-      shopBtn: "Comprar Cadeira The Classic White",
+      shopBtn: "Comprar Cadeira Classic White",
       learnBtn: "Saber Mais",
       packLabel: "Pack de 4",
       madeFrom: "Feito de",
@@ -70,8 +70,8 @@ const HeroSection = ({ lang = "pt" }: HeroSectionProps) => {
             <div className="relative aspect-square rounded-3xl overflow-hidden bg-secondary shadow-floating">
               <img
                 src={whiteChair}
-                alt="The Classic White - Sustainable chair made from recycled bottle caps"
-                className="w-full h-full object-contain p-4 animate-float"
+                alt="Classic White - Sustainable chair made from recycled bottle caps"
+                className="w-full h-full object-cover animate-float"
               />
             </div>
             
