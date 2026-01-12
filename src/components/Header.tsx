@@ -55,7 +55,7 @@ const Header = ({ lang = "pt" }: HeaderProps) => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled
+        isScrolled || isMobileMenuOpen
           ? "bg-background/80 backdrop-blur-xl shadow-soft"
           : "bg-transparent"
       }`}
@@ -107,9 +107,12 @@ const Header = ({ lang = "pt" }: HeaderProps) => {
         </div>
 
         {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border animate-fade-in">
-            <div className="flex flex-col space-y-4">
+        <div 
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            isMobileMenuOpen ? "max-h-[500px] opacity-100 py-4 border-t border-border" : "max-h-0 opacity-0"
+          }`}
+        >
+          <div className="flex flex-col space-y-4">
               {t.navLinks.map((link) => (
                 <a
                   key={link.name}
@@ -130,7 +133,6 @@ const Header = ({ lang = "pt" }: HeaderProps) => {
               </div>
             </div>
           </div>
-        )}
       </nav>
     </header>
   );
