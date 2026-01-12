@@ -31,24 +31,24 @@ const ProcessSection = ({ lang = "pt" }: ProcessSectionProps) => {
       ],
     },
     pt: {
-      badge: "Nosso Processo",
+      badge: "O Nosso Processo",
       title: "De tampa a cadeira.",
-      subtitle: "Cada peça de mobiliário começa com uma simples tampa de garrafa. Veja como transformamos lixo em design.",
+      subtitle: "Cada peça de mobiliário começa com uma simples tampa de garrafa. Veja como transformamos resíduos em design.",
       steps: [
         {
           number: "01",
-          title: "Coletar",
-          description: "Fazemos parceria com indivíduos em situação irregular, ajudando-os a obter documentação adequada e fornecendo-lhes o vestuário e equipamento necessários para coletar tampas de garrafas plásticas que, de outra forma, acabariam em aterros e oceanos.",
+          title: "Recolher",
+          description: "Fazemos parceria com pessoas em situação irregular, ajudando-as a obter documentação adequada e fornecendo-lhes o vestuário e equipamento necessários para recolher tampas de garrafas plásticas que, de outra forma, acabariam em aterros e oceanos.",
         },
         {
           number: "02",
           title: "Processar",
-          description: "As tampas são limpas, separadas por cor e processadas em matéria-prima pronta para fabricação.",
+          description: "As tampas são limpas, separadas por cor e processadas em matéria-prima pronta para fabrico.",
         },
         {
           number: "03",
           title: "Criar",
-          description: "Nossos artesãos moldam e dão forma ao plástico reciclado em peças de mobiliário impressionantes e duráveis como The Classic White.",
+          description: "Os nossos artesãos moldam e dão forma ao plástico reciclado em peças de mobiliário impressionantes e duráveis como a The Classic White.",
         },
       ],
     },

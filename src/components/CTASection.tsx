@@ -17,11 +17,11 @@ const CTASection = ({ lang = "pt" }: CTASectionProps) => {
     },
     pt: {
       badge: "Disponibilidade Limitada",
-      title: "Tenha o The Classic White.",
-      description: "Junte-se a milhares que escolheram design sustentável sem compromisso. Cada cadeira é feita sob encomenda.",
+      title: "Tenha a The Classic White.",
+      description: "Junte-se a milhares que escolheram design sustentável sem compromisso. Cada cadeira é feita por encomenda.",
       packLabel: "Pack Exclusivo • 4 Cadeiras",
       buyPack: "Comprar Pack — 799 MZN",
-      mission: "Fazemos parceria com indivíduos em situação irregular, ajudando-os a obter documentação adequada e fornecendo-lhes o vestuário e equipamento necessários para coletar tampas de garrafas plásticas que, de outra forma, acabariam em aterros e oceanos.",
+      mission: "Fazemos parceria com pessoas em situação irregular, ajudando-as a obter documentação adequada e fornecendo-lhes o vestuário e equipamento necessários para recolher tampas de garrafas plásticas que, de outra forma, acabariam em aterros e oceanos.",
     },
   };
 
