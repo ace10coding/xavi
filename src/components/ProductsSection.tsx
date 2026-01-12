@@ -29,7 +29,6 @@ const ProductsSection = ({ lang = "pt" }: ProductsSectionProps) => {
       buyPack: "Buy Pack of 4",
       buyOne: "Buy 1 Chair",
       // Table content
-      tableBadge: "Coming Soon",
       tableTitle: "3D Printed Black Table",
       tableDescription: "Our next innovation: elegant black tables crafted using advanced 3D printing technology with recycled materials.",
       tableMaterial: "Material",
@@ -66,7 +65,6 @@ const ProductsSection = ({ lang = "pt" }: ProductsSectionProps) => {
       buyPack: "Comprar Pack de 4",
       buyOne: "Comprar 1 Cadeira",
       // Table content
-      tableBadge: "Brevemente",
       tableTitle: "Mesa Preta Impressa em 3D",
       tableDescription: "A nossa próxima inovação: mesas pretas elegantes fabricadas com tecnologia avançada de impressão 3D e materiais reciclados.",
       tableMaterial: "Material",
@@ -236,12 +234,6 @@ const ProductsSection = ({ lang = "pt" }: ProductsSectionProps) => {
                     alt="3D Printed Black Table"
                     className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105 p-8"
                   />
-                </div>
-                {/* Coming Soon Badge */}
-                <div className="absolute top-6 right-6">
-                  <span className="inline-block px-4 py-2 text-xs font-semibold uppercase tracking-wider bg-accent text-accent-foreground rounded-full">
-                    {t.tableBadge}
-                  </span>
                 </div>
               </div>
             </div>
