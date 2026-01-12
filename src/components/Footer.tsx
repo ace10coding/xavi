@@ -7,7 +7,7 @@ const Footer = ({ lang = "pt" }: FooterProps) => {
     en: {
       tagline: "Transforming waste into wonder.",
       products: "Products",
-      productLinks: ["All Chairs"],
+      productLinks: ["All Chairs", "Table"],
       company: "Company",
       companyLinks: ["Sustainability", "Careers"],
       support: "Support",

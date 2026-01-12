@@ -24,7 +24,8 @@ const Header = ({ lang = "pt" }: HeaderProps) => {
   const content = {
     en: {
       navLinks: [
-        { name: "Products", href: "#products" },
+        { name: "All Chairs", href: "#products" },
+        { name: "Table", href: "#products" },
         { name: "Process", href: "#process" },
         { name: "Impact", href: "#impact" },
         { name: "About", href: "#about" },
