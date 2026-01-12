@@ -110,16 +110,6 @@ const ImpactSection = ({ lang = "pt" }: ImpactSectionProps) => {
             </div>
           ))}
         </div>
-
-        {/* Quote */}
-        <div className="mt-16 lg:mt-24 text-center max-w-3xl mx-auto">
-          <blockquote className="text-2xl lg:text-3xl font-light italic opacity-80 leading-relaxed">
-            "{t.quote}"
-          </blockquote>
-          <cite className="block mt-6 text-sm font-medium uppercase tracking-wide opacity-60">
-            {t.author}
-          </cite>
-        </div>
       </div>
     </section>
   );

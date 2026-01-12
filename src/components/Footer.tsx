@@ -5,7 +5,7 @@ interface FooterProps {
 const Footer = ({ lang = "pt" }: FooterProps) => {
   const content = {
     en: {
-      tagline: "Transforming waste into wonder. Sustainable furniture for a better tomorrow.",
+      tagline: "Transforming waste into wonder.",
       products: "Products",
       productLinks: ["All Chairs"],
       company: "Company",
@@ -19,7 +19,7 @@ const Footer = ({ lang = "pt" }: FooterProps) => {
       terms: "Terms of Service",
     },
     pt: {
-      tagline: "A transformar resíduos em maravilha. Mobiliário sustentável para um amanhã melhor.",
+      tagline: "A transformar resíduos em maravilha.",
       products: "Produtos",
       productLinks: ["Todas as Cadeiras", "Mesas"],
       company: "Empresa",
