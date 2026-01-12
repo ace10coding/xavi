@@ -38,6 +38,12 @@ const ProductsSection = ({ lang = "pt" }: ProductsSectionProps) => {
       tableDimensionsValue: "120 × 60 × 45 cm",
       tablePrice: "Price",
       buyTable: "Pre-Order Now",
+      // Bundle content
+      bundleBadge: "Best Value",
+      bundleTitle: "Complete Set",
+      bundleDescription: "6 Chairs + 1 Table",
+      bundleSavings: "Save 320 MZN",
+      buyBundle: "Buy Complete Set",
     },
     pt: {
       badge: "Exclusivo",
@@ -69,6 +75,12 @@ const ProductsSection = ({ lang = "pt" }: ProductsSectionProps) => {
       tableDimensionsValue: "120 × 60 × 45 cm",
       tablePrice: "Preço",
       buyTable: "Encomendar Agora",
+      // Bundle content
+      bundleBadge: "Melhor Valor",
+      bundleTitle: "Conjunto Completo",
+      bundleDescription: "6 Cadeiras + 1 Mesa",
+      bundleSavings: "Poupe 320 MZN",
+      buyBundle: "Comprar Conjunto Completo",
     },
   };
 
@@ -230,6 +242,50 @@ const ProductsSection = ({ lang = "pt" }: ProductsSectionProps) => {
                   <span className="inline-block px-4 py-2 text-xs font-semibold uppercase tracking-wider bg-accent text-accent-foreground rounded-full">
                     {t.tableBadge}
                   </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bundle Offer */}
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-foreground to-foreground/90 rounded-3xl p-8 lg:p-12 text-background">
+              <div className="text-center mb-8">
+                <span className="inline-block px-4 py-2 text-xs font-semibold uppercase tracking-wider bg-accent text-accent-foreground rounded-full mb-4">
+                  {t.bundleBadge}
+                </span>
+                <h3 className="text-3xl lg:text-4xl font-semibold mb-4">
+                  {t.bundleTitle}
+                </h3>
+                <p className="text-xl opacity-80">
+                  {t.bundleDescription}
+                </p>
+              </div>
+
+              <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
+                {/* Bundle Images */}
+                <div className="flex items-center gap-4">
+                  <div className="w-24 h-24 lg:w-32 lg:h-32 rounded-2xl overflow-hidden bg-background/10">
+                    <img src={whiteChair} alt="Chair" className="w-full h-full object-cover" />
+                  </div>
+                  <span className="text-2xl font-bold">×6</span>
+                  <span className="text-2xl">+</span>
+                  <div className="w-24 h-24 lg:w-32 lg:h-32 rounded-2xl overflow-hidden bg-background/10">
+                    <img src={blackTable} alt="Table" className="w-full h-full object-contain p-2" />
+                  </div>
+                  <span className="text-2xl font-bold">×1</span>
+                </div>
+
+                {/* Price & CTA */}
+                <div className="text-center lg:text-left">
+                  <div className="flex items-end gap-3 justify-center lg:justify-start mb-2">
+                    <span className="text-5xl lg:text-6xl font-bold">1,699 MZN</span>
+                    <span className="text-xl opacity-60 line-through">2,019 MZN</span>
+                  </div>
+                  <p className="text-accent font-medium mb-6">{t.bundleSavings}</p>
+                  <Button variant="secondary" size="xl" className="w-full lg:w-auto bg-background text-foreground hover:bg-background/90">
+                    {t.buyBundle}
+                  </Button>
                 </div>
               </div>
             </div>
