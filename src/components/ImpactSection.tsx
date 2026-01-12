@@ -40,9 +40,9 @@ const ImpactSection = ({ lang = "pt" }: ImpactSectionProps) => {
       author: "— Xavisa Founders",
     },
     pt: {
-      badge: "Nosso Impacto",
+      badge: "O Nosso Impacto",
       title: "Cada tampa conta.",
-      subtitle: "Juntos, estamos criando uma economia circular que transforma lixo em design bonito e funcional.",
+      subtitle: "Juntos, estamos a criar uma economia circular que transforma resíduos em design bonito e funcional.",
       stats: [
         {
           icon: Recycle,
@@ -69,7 +69,7 @@ const ImpactSection = ({ lang = "pt" }: ImpactSectionProps) => {
           description: "Impacto global, ação local",
         },
       ],
-      quote: "A melhor maneira de prever o futuro é projetá-lo. Estamos projetando um futuro onde o lixo se torna maravilha.",
+      quote: "A melhor maneira de prever o futuro é desenhá-lo. Estamos a desenhar um futuro onde os resíduos se tornam maravilha.",
       author: "— Fundadores Xavisa",
     },
   };

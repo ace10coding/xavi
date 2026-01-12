@@ -18,9 +18,9 @@ const HeroSection = ({ lang = "pt" }: HeroSectionProps) => {
     },
     pt: {
       badge: "Design Sustentável",
-      title1: "De Lixo",
+      title1: "De Resíduo",
       title2: "a Maravilha.",
-      description: "Transformamos tampas de garrafa descartadas em cadeiras lindamente criadas.",
+      description: "Transformamos tampas de garrafa descartadas em cadeiras e mesas de design único.",
       shopBtn: "Comprar The Classic White",
       learnBtn: "Saber Mais",
       packLabel: "Pack de 4",
