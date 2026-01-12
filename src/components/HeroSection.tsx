@@ -41,9 +41,6 @@ const HeroSection = ({ lang = "pt" }: HeroSectionProps) => {
           {/* Text Content */}
           <div className="text-center lg:text-left space-y-8 animate-fade-up">
             <div className="space-y-4">
-              <p className="text-sm font-medium uppercase tracking-widest text-accent">
-                {t.badge}
-              </p>
               <h1 className="text-hero lg:text-display font-semibold text-foreground text-balance">
                 {t.title1}
                 <br />
