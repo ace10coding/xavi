@@ -1,6 +1,6 @@
 import bottleCapsImage from "@/assets/bottle-caps.jpg";
 import plasticBottlesImage from "@/assets/plastic-bottles.jpg";
-import blueChair from "@/assets/blue-chair.jpg";
+import whiteChair from "@/assets/white-chair.jpg";
 
 const ProcessSection = () => {
   const steps = [
@@ -21,8 +21,8 @@ const ProcessSection = () => {
     {
       number: "03",
       title: "Create",
-      description: "Our craftspeople mold and shape the recycled plastic into stunning, durable furniture pieces like The Classic Blue.",
-      image: blueChair,
+      description: "Our craftspeople mold and shape the recycled plastic into stunning, durable furniture pieces like The Classic White.",
+      image: whiteChair,
       objectFit: "contain" as const,
     },
   ];

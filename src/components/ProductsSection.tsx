@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import blueChair from "@/assets/blue-chair.jpg";
+import whiteChair from "@/assets/white-chair.jpg";
 
 const ProductsSection = () => {
   return (
@@ -11,7 +11,7 @@ const ProductsSection = () => {
             Exclusive
           </p>
           <h2 className="text-title lg:text-hero font-semibold text-foreground mb-6">
-            The Classic Blue.
+            The Classic White.
           </h2>
           <p className="text-lg text-muted-foreground">
             One chair. Perfected.
@@ -26,8 +26,8 @@ const ProductsSection = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-eco-blue/20 to-accent/20 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative aspect-square rounded-3xl overflow-hidden bg-secondary shadow-floating">
                 <img
-                  src={blueChair}
-                  alt="The Classic Blue Chair"
+                  src={whiteChair}
+                  alt="The Classic White Chair"
                   className="w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
@@ -43,7 +43,7 @@ const ProductsSection = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h3 className="text-3xl lg:text-4xl font-semibold text-foreground">
-                  The Classic Blue
+                  The Classic White
                 </h3>
                 <p className="text-xl text-muted-foreground leading-relaxed">
                   Crafted from 500+ recycled bottle caps, this iconic design 

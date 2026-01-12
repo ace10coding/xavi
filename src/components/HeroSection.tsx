@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import blueChair from "@/assets/blue-chair.jpg";
+import whiteChair from "@/assets/white-chair.jpg";
 
 const HeroSection = () => {
   return (
@@ -28,7 +28,7 @@ const HeroSection = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button variant="hero" size="lg">
-                Shop The Classic Blue
+                Shop The Classic White
               </Button>
               <Button variant="heroOutline" size="lg">
                 Learn More
@@ -57,8 +57,8 @@ const HeroSection = () => {
           <div className="relative animate-fade-up" style={{ animationDelay: "0.2s" }}>
             <div className="relative aspect-square rounded-3xl overflow-hidden bg-secondary shadow-floating">
               <img
-                src={blueChair}
-                alt="The Classic Blue - Sustainable chair made from recycled bottle caps"
+                src={whiteChair}
+                alt="The Classic White - Sustainable chair made from recycled bottle caps"
                 className="w-full h-full object-contain p-8 animate-float"
               />
             </div>

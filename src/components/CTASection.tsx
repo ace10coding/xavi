@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import blueChair from "@/assets/blue-chair.jpg";
+import whiteChair from "@/assets/white-chair.jpg";
 
 const CTASection = () => {
   return (
@@ -12,7 +12,7 @@ const CTASection = () => {
               Limited Availability
             </p>
             <h2 className="text-title lg:text-hero font-semibold text-foreground mb-6">
-              Own The Classic Blue.
+              Own The Classic White.
             </h2>
             <p className="text-lg text-muted-foreground mb-10 max-w-lg">
               Join thousands who have chosen sustainable design without compromise. 
@@ -45,8 +45,8 @@ const CTASection = () => {
           <div className="relative">
             <div className="aspect-square max-w-md mx-auto rounded-3xl overflow-hidden bg-background shadow-floating">
               <img
-                src={blueChair}
-                alt="The Classic Blue Chair"
+                src={whiteChair}
+                alt="The Classic White Chair"
                 className="w-full h-full object-contain p-6"
               />
             </div>
