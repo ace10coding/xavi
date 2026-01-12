@@ -14,7 +14,7 @@ const ProductsSection = ({ lang = "pt" }: ProductsSectionProps) => {
       subtitle: "Sustainable design, uncompromising quality.",
       // Chair content
       chairBadge: "Limited Edition",
-      chairTitle: "The Classic White",
+      chairTitle: "The Classic White Chair",
       chairDescription: "Crafted from 500+ recycled bottle caps, this iconic design combines bold aesthetics with uncompromising durability.",
       material: "Material",
       materialValue: "100% Recycled Plastic",
@@ -50,7 +50,7 @@ const ProductsSection = ({ lang = "pt" }: ProductsSectionProps) => {
       subtitle: "Design sustentável, qualidade sem compromissos.",
       // Chair content
       chairBadge: "Edição Limitada",
-      chairTitle: "The Classic White",
+      chairTitle: "Cadeira The Classic White",
       chairDescription: "Fabricada com mais de 500 tampas de garrafa recicladas, este design icónico combina estética arrojada com durabilidade sem compromissos.",
       material: "Material",
       materialValue: "100% Plástico Reciclado",
@@ -112,7 +112,7 @@ const ProductsSection = ({ lang = "pt" }: ProductsSectionProps) => {
                   <img
                     src={whiteChair}
                     alt="The Classic White Chair"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-contain p-4 transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
                 {/* Exclusive Badge */}
@@ -232,7 +232,7 @@ const ProductsSection = ({ lang = "pt" }: ProductsSectionProps) => {
                   <img
                     src={blackTable}
                     alt="3D Printed Black Table"
-                    className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105 p-8"
+                    className="w-full h-full object-contain p-4 transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
               </div>

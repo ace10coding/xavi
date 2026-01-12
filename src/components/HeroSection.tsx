@@ -21,9 +21,11 @@ const HeroSection = ({ lang = "pt" }: HeroSectionProps) => {
       title1: "De Resíduo",
       title2: "a Maravilha.",
       description: "Transformamos tampas de garrafa descartadas em cadeiras e mesas de design único.",
-      shopBtn: "Comprar The Classic White",
+      shopBtn: "Comprar Cadeira The Classic White",
       learnBtn: "Saber Mais",
       packLabel: "Pack de 4",
+      madeFrom: "Feito de",
+      caps: "500 Tampas",
     },
   };
 
@@ -69,14 +71,14 @@ const HeroSection = ({ lang = "pt" }: HeroSectionProps) => {
               <img
                 src={whiteChair}
                 alt="The Classic White - Sustainable chair made from recycled bottle caps"
-                className="w-full h-full object-cover animate-float"
+                className="w-full h-full object-contain p-4 animate-float"
               />
             </div>
             
             {/* Floating badge */}
             <div className="absolute -bottom-4 -left-4 lg:-bottom-6 lg:-left-6 bg-background rounded-2xl p-4 lg:p-6 shadow-elevated">
-              <p className="text-xs text-muted-foreground uppercase tracking-wide">Made from</p>
-              <p className="text-xl lg:text-2xl font-semibold text-foreground">500 Caps</p>
+              <p className="text-xs text-muted-foreground uppercase tracking-wide">{lang === "pt" ? "Feito de" : "Made from"}</p>
+              <p className="text-xl lg:text-2xl font-semibold text-foreground">{lang === "pt" ? "500 Tampas" : "500 Caps"}</p>
             </div>
 
             {/* Price tag */}
